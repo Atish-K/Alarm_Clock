@@ -71,7 +71,7 @@ userInput.addEventListener("submit", function(e){
             alert(`Alarm for ${new_Alarm} already set. `);
         }
     } else {
-        alert("Invalid Time ");
+        alert("Invalid Entered Time ");
     }
 });
 
@@ -122,4 +122,3 @@ const remove = (value) => {
     alarm_List.length = 0;
     alarm_List.push.apply(alarm_List, newList);
 };
- 
