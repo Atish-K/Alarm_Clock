@@ -80,8 +80,8 @@ userInput.addEventListener("submit", function(e){
 function shownew_Alarm(new_Alarm){
     const html = `
         <li class = "time-list">
-            <span class = "time">${new_Alarm}</span>
-            <button class = "deleteAlarm time-control" id = "delete-button" onclick = "remove(this.value)" value = ${new_Alarm}>Delete Button</button>
+            <span class = "time" style="margin-right:50px;">${new_Alarm}</span>
+            <a href=""><button class = "deleteAlarm time-control" id = "delete-button" onclick = "remove(this.value)" value = ${new_Alarm}> Delete </button></a>
         </li>`;
     myList.innerHTML += html;
 }
@@ -122,5 +122,3 @@ const remove = (value) => {
     alarm_List.length = 0;
     alarm_List.push.apply(alarm_List, newList);
 };
-
-// setInterval(updateTime,1000);
