@@ -1,10 +1,10 @@
-Preferred box-sizing value
+/* Preferred box-sizing value
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 
-}
+} */
 
 ol,
 ul {
@@ -20,10 +20,19 @@ body {
   background-color: rgb(165, 162, 156);
  margin: 0%;
 }
+.content{
+  background-color: orange;
+  width: 45%;
+  margin: auto;
+  border: 2px solid lightslategray;
+  border-radius: 10px;
+
+}
 .container {
-  margin: 15% auto;
+  margin: auto;
   width: 50%;
   text-align: center;
+  border: 1px solid grey;
 }
 
 #current-time {
@@ -36,10 +45,13 @@ body {
     width: 100%;
     background-color: rgb(48, 47, 47);
     margin-top: -20px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 10px;
 }
 .header h1{
     color: aliceblue;
     padding: 25px;
+    
 }
 h1,
 h2 {
@@ -115,3 +127,4 @@ hr{
     text-align: center;
   }
 }
+
